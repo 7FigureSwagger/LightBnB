@@ -21,24 +21,20 @@
 --       ('Etta West', 'charlielevy@yahoo.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 --       ('Margaret Wong', 'makaylaweiss@icloud.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 --       ('Leroy Hart', 'jaycereynolds@inbox.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.')
- `start_date` |  `end_date`  | `property_id` | `guest_id` 
---------------|--------------|---------------|----------
- 2018-09-11   | 2018-09-26   |           313 |      399
- 2019-01-04   | 2019-02-01   |           515 |      628
- 2021-10-01   | 2021-10-14   |           217 |       93
- 2014-10-21   | 2014-10-21   |           557 |       71
- 2016-07-17   | 2016-08-01   |           672 |      794
- 2018-05-01   | 2018-05-27   |           285 |      160
- 2022-10-04   | 2022-10-23   |            65 |      120
- 2015-09-13   | 2015-09-30   |           614 |      419
- 2023-05-27   | 2023-05-28   |           484 |      661
- 2023-04-23   | 2023-05-02   |           770 |       71
+
 
 INSERT INTO reservations
   (start_date, end_date, property_id, guest_id)
-
-
-
+    VALUES ('2018-09-11', '2018-09-26', 313, 399),
+           ('2019-01-04', '2019-02-01', 515, 628),
+           ('2021-10-01', '2021-10-14', 217, 93),
+           ('2014-10-21', '2014-10-21', 557, 71),
+           ('2016-07-17', '2016-08-01', 672, 794),
+           ('2018-05-01', '2018-05-27', 285, 160),
+           ('2022-10-04', '2022-10-23', 65, 120),
+           ('2015-09-13', '2015-09-30', 614, 419),
+           ('2023-05-27', '2023-05-28', 484, 661),
+           ('2023-04-23', '2023-05-02', 770, 71)
 
 
 INSERT INTO property_reviews
@@ -50,8 +46,3 @@ INSERT INTO property_reviews
            (4, 2, 7, 5, 'message'),
            (4, 3, 4, 4, 'message'),
            (5, 6, 3, 5, 'message')    
-
-
-
-
-
